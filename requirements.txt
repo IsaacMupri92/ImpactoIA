@@ -1,0 +1,12 @@
+# Core dependencies
+pydantic>=2.0.0  # Validación de datos robusta
+python-dotenv>=1.0.0  # Gestión de variables de entorno
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Code quality
+black>=23.0.0  # Formateo automático
+flake8>=6.0.0  # Linting
+mypy>=1.0.0  # Type checking
