@@ -1,0 +1,34 @@
+{
+  "name": "impactoia-windows-app",
+  "version": "1.0.0",
+  "description": "Aplicación de Windows con soporte para system tray",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "windows",
+    "system-tray",
+    "desktop-app"
+  ],
+  "author": "ImpactoIA",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.impactoia.app",
+    "productName": "ImpactoIA",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

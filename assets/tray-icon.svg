@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icono más simple para el tray (16x16, 32x32, 64x64) -->
+  <defs>
+    <linearGradient id="trayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Círculo de fondo -->
+  <circle cx="32" cy="32" r="28" fill="url(#trayGrad)"/>
+
+  <!-- Letra "I" -->
+  <text x="32" y="46" font-family="Arial, sans-serif" font-size="36" font-weight="bold"
+        text-anchor="middle" fill="white">I</text>
+</svg>
