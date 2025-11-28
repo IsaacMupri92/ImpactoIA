@@ -4,6 +4,7 @@ import { z } from 'zod';
  * Schema de validación para una entrada de consumo
  */
 export const consumptionEntrySchema = z.object({
+  id: z.number().optional(),
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Formato de fecha inválido (YYYY-MM-DD)'),
   toolId: z.string().min(1, 'El ID de la herramienta es requerido'),
   modelId: z.string().min(1, 'El ID del modelo es requerido'),
@@ -97,7 +98,7 @@ export function isValidJSON(jsonString: string): boolean {
 export const databaseExportSchema = z.object({
   version: z.number(),
   exportDate: z.string(),
-  consumption: z.array(consumptionEntrySchema.partial({ id: true })),
+  consumption: z.array(consumptionEntrySchema),
   settings: z.array(
     z.object({
       key: z.string(),
